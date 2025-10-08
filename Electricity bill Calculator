@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.Math.*;;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int units = sc.nextInt();
+      double cost=0;
+      if (units <= 50){
+        cost=units;
+      }else if (units>50 && units<=150){
+        cost = 50*1 + (units-50)*2;
+      }else if (units>150 && units<=250){
+        cost = 50*1 + 100*2+ (units-150)*3;
+      }else if(units>250){
+        cost=50*1 + 100*2 + 100*3 +(units-250)*4;
+      }     
+      if (cost > 150) {
+        cost = cost + cost * 0.20;
+      }
+              
+      System.out.println((int)Math.ceil(cost));
+  }
+}
