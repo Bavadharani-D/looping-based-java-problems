@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+      char a= sc.next().charAt(0);
+      if(Character.isLowerCase(a)){
+        System.out.println(Character.toUpperCase(a));
+      }else if(Character.isUpperCase(a)){
+        System.out.println(Character.toLowerCase(a));
+      }else{
+        System.out.println("abcd theriyatha?");
+      }
+     
+  }
+}
