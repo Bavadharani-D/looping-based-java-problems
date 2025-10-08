@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int age = sc.nextInt();
+      int distance = sc.nextInt();
+      double fare = distance*5;
+       if(age<12){
+         fare = fare*0.50;
+         System.out.println((int)fare);
+       }
+       else if(age>=12 && age<=59){
+         System.out.println((int)fare);
+       }
+       else if(age>=60){
+         fare= fare*0.75;
+         System.out.println((int)fare);
+       }
+  }
+}
